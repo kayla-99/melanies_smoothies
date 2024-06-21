@@ -47,4 +47,4 @@ if ingredients_list:
 ## New section to display fruityvice nutrition info using REST API calls
 import requests
 fruityvice_response = requests.get("https://fruityvice.com/api/fruit/watermelon")
-st.text(fruityvice_response)
+st.text(fruityvice_response.json())
